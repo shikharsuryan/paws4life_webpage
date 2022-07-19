@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<style type="text/css">
+		.data {
+			font-family: 'Fredoka', sans-serif;
+			font-size: 20px;
+		}
+		.content {	
+			width: 60%;
+			margin: 0 auto;
+			text-align: center;
+			margin-top: 20px;
+		}
+
+		.imgs {
+			width: 250px;
+			height: 300px;
+			padding-top: 40px;
+		}
+		.col {
+			border: 1px solid #F4EAED;
+			margin: 15px;
+			border-radius: 25px;
+			transition: 0.3s;
+		}
+		.col:hover {
+			background-color: #F4EAED;
+		}
+		.footer {
+			width: 100%;
+			height: 100px;
+			background-color: #BA1111;
+			margin-top: 50px;
+			color: white;
+			text-align: center;
+			font-family: 'Fredoka', sans-serif;
+
+			  display: flex;
+  justify-content: center;
+  align-items: center;
+
+		}
+		.data {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		.btn-success {
+			font-size: 20px;
+			padding: 7px 30px 7px 30px;
+		}
+		#cate {
+			text-align: center;
+			margin-top: 30px;
+		}
+		.btn-outline-danger {
+			width: 110px;
+		}
+		.btn-outline-danger:hover {
+			background-color: #BA1111;
+		}
+
+		#over:hover {
+			background-color: #BA1111;
+		}
+
+
+
+	</style>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Sansita+Swashed:wght@900&display=swap" rel="stylesheet">
+
+
+
+		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+
+<form action="https://formspree.io/f/xgedraya" method="POST">
+	<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLongTitle">Enter your details</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+	<div class="form-group">
+	  <label for="exampleInputEmail1">Your Name</label>
+	  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="Name">
+	</div>
+	<div class="form-group">
+		<label for="exampleInputEmail1">Email address</label>
+		<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="E-Mail ID">
+	  </div>
+	<div class="form-group">
+	  <label for="exampleInputPassword1">Phone</label>
+	  <input type="number" class="form-control" id="exampleInputPassword1" name="Phone Number">
+	</div>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		  <button onclick="submit()" type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+</form>
+
+
+	<div id="cate">
+		<a href="adopt_dogs.html"><button style="background-color: #BA1111; color: white;" type="button" class="btn btn-outline-danger">Dogs</button></a>
+		<a href="adopt_cats.html"><button id="over" href="home.html" type="button" class="btn btn-outline-danger">Cats</button></a>
+		
+	</div>
+
+	<div class="content">
+		<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <img src="dogs_adoption/bruce.jpeg" class="imgs"><br>
+      <div class="data">
+      	    Bruce <br>
+  	  		Male, Hare Indian Dog <br> Puppyhood  <br>
+  	  		Pune, Maharashtra
+      </div>
+  	  <button data-toggle="modal" data-target="#exampleModalCenter" style="margin-bottom: 40px;" type="button" class="btn btn-success">Adopt</button>
+    </div>
+    <div class="col" class="imgs">
+      <img src="dogs_adoption/alex.jpeg" class="imgs"><br>
+      <div class="data">
+      	    Alex <br>
+  	  		Male, German Shepherd <br> Adolescence <br>
+  	  		New Delhi, Delhi
+      </div>
+  	  <button data-toggle="modal" data-target="#exampleModalCenter" style="margin-bottom: 40px;" type="button" class="btn btn-success">Adopt</button>
+    </div>
+    <div class="col" class="imgs">
+      <img src="dogs_adoption/buddy.jpeg" class="imgs"><br>
+      <div class="data">
+      	    Buddy <br>
+  	  			Female, Pomeranian <br> Adolescence <br>
+  	  			Pune, Maharashtra
+      </div>
+
+  	  <button data-toggle="modal" data-target="#exampleModalCenter" style="margin-bottom: 40px;" type="button" class="btn btn-success">Adopt</button>
+    </div>
+  </div>
+    <div class="row">
+    <div class="col">
+      <img src="dogs_adoption/coco.jpeg" class="imgs"><br>
+      <div class="data">
+      	    Coco <br>
+      	    Female, German Shepherd <br> Adolescence <br>
+						New Delhi, Delhi
+      </div>
+
+  	  <button data-toggle="modal" data-target="#exampleModalCenter" style="margin-bottom: 40px;" type="button" class="btn btn-success">Adopt</button>
+    </div>
+    <div class="col" class="imgs">
+      <img src="dogs_adoption/daniel.jpeg" class="imgs"><br>
+      <div class="data">
+      	      Daniel <br>
+  	  				Male, Pug <br> Adolescence <br>
+  	  				Kolkata, West Bengal
+      </div>
+
+  	  <button data-toggle="modal" data-target="#exampleModalCenter" style="margin-bottom: 40px;" type="button" class="btn btn-success">Adopt</button>
+    </div>
+    <div class="col" class="imgs">
+      <img src="dogs_adoption/sherry.jpeg" class="imgs"><br>
+      <div class="data">
+      	      Sherry <br> Male, Beagle <br>
+  	  Adulthood <br> Noida, Uttar Pradesh
+      </div>
+
+  	  <button data-toggle="modal" data-target="#exampleModalCenter" style="margin-bottom: 40px;" type="button" class="btn btn-success">Adopt</button>
+    </div>
+  </div>
+    <div class="row">
+    <div class="col">
+      <img src="dogs_adoption/lucy.jpeg" class="imgs"><br>
+      <div class="data">
+      	      Lucy <br> Female, Beagle <br> Puppyhood
+  	   <br> Jaipur, Rajasthan
+      </div>
+
+  	  <button data-toggle="modal" data-target="#exampleModalCenter" style="margin-bottom: 40px;" type="button" class="btn btn-success">Adopt</button>
+    </div>
+    <div class="col" class="imgs">
+      <img src="dogs_adoption/max.jpeg" class="imgs"><br>
+      <div class="data">
+      	      Max <br> Male, Beagle <br> Adolescence
+  	   <br> Hyderabad, Telangana
+      </div>
+
+  	  <button data-toggle="modal" data-target="#exampleModalCenter" style="margin-bottom: 40px;" type="button" class="btn btn-success">Adopt</button>
+    </div>
+    <div class="col" class="imgs">
+      <img src="dogs_adoption/pluto.jpeg" class="imgs"><br>
+      <div class="data">
+      	      Pluto <br> Male, German Shepherd <br> Senior <br>
+  	  Nandyal, Andhra Pradesh 
+      </div>
+
+  	  <button data-toggle="modal" data-target="#exampleModalCenter" style="margin-bottom: 40px;" type="button" class="btn btn-success">Adopt</button>
+    </div>
+  </div>
+</div>
+	</div>
+
+<script type="text/javascript">
+	function submit() {
+		alert("Your details have been sent to the owner.");
+	}
+</script>
+
+	<div class="footer">
+			Copyright © 2017 Paws4Life
+	</div>
+
+</body>
+</html>

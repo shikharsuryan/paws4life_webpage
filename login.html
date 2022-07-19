@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Sansita+Swashed:wght@900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="log.css">
+</head>
+
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <form action="home.html" class="input-group" id="login">
+                <input type="text" name="" id="" class="input-field" placeholder="Username" required>
+                <input type="password" name="" id="" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="ch-box"><span>Remember Me</span>
+                <button type="submit" class="submit-btn" >Login</button>
+            </form>
+            <form action="home.html" class="input-group" id="register">
+                <input type="text" name="" id="" class="input-field" placeholder="Username" required>
+                <input type="email" name="" id="" class="input-field" placeholder="E-Mail ID" required>
+                <input type="password" name="" id="" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="ch-box" required=><span>I agree to T&C</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+        
+    </div>
+
+<script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    var z = document.getElementById("btn");
+    function register()
+    {
+        x.style.left = "-450px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+    }
+    function login()
+    {
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+    }
+</script>
+
+
+
+
+
+
+
+</body>
+
+</html>

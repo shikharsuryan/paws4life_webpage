@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Sansita+Swashed:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cont.css"><style type="text/css">
+        .footer {
+          width: 100%;
+          height: 100px;
+          background-color: #BA1111;
+          color: white;
+          text-align: center;
+          font-family: 'Fredoka', sans-serif;
+                                    display: flex;
+      justify-content: center;
+      align-items: center;
+        }
+        </style>
+    
+    <title>Document</title>
+</head>
+<body>
+  <section class="contact">
+      <div class="content" style="margin-bottom: 10px;">
+          <h2 style="color: #BA1111;"><b>Contact Us</b></h2><br>
+          <p style="color: white;">Have a query? Don't worry you can submit a form by filling up some details and we'll try to reach you out as soon as possible</p>
+      
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="text">
+                        <h3  style="color: #BA1111;"><b>Call Us</b></h3>
+                        <p style="color: white;">+91 9816871235 <br>+91 8800854123 </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="text">
+                        <h3  style="color: #BA1111;"><b>Address</b></h3>
+                        <p style="color: white;">121, Shiv Nagar,<br>New Delhi, ND 110008</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="text">
+                        <h3  style="color: #BA1111;"><b>Our top services</b></h3>
+                        <p style="color: white;"><a href="/pets_dogs.html">Buying Pets</a><br><a href="/adopt_dogs.html">Adoption</a><br><a href="/dog_food.html">Shop for Pets</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form action="https://formspree.io/f/mwkyavgw" method="POST">
+                    <h2>Send Your Query</h2>
+                    <div class="inputBox">
+                        <label for="">Name</label>
+                        <input type="text" name = "Name"required placeholder="Enter Your Full Name">
+                        
+                    </div>
+                    <div class="inputBox">
+                        <label for="">Email</label>
+                        <input type="email" name="Email" required placeholder="Enter Your E-mail ID">
+                        
+                    </div>
+                    <div class="inputBox">
+                        <label for="">Query</label>
+                        <textarea  name="Query" cols="30" rows="10"></textarea>
+                        
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" value="Submit" onclick="display()">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1389.8856247204528!2d77.09173170473396!3d28.620999319884422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d04af60c0483d%3A0xf4ac6ff1e2ac8232!2sMaharaja%20Surajmal%20Institute!5e0!3m2!1sen!2sin!4v1652105653973!5m2!1sen!2sin" width="1080px" height="600px" style="display: block; border:10px solid white; margin: 75px auto 75px auto;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+  <div class="footer">
+    Copyright © 2017 Paws4Life
+  </div>
+  <script>
+    function display()
+    {
+      alert("Enquiry has been submitted!");
+    }
+  </script>  
+</body>
+</html>

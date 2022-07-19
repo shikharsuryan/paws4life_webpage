@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@900&display=swap" rel="stylesheet">
+  <style type="text/css">
+    #headline {
+      text-align: center;
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+                    .content    {   
+            width: 33%;
+            border: 2px;
+            border-style: groove;
+            border-radius: 25px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 5px 10px #F4EAED;
+            font-size: 15px;
+
+              position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+          }
+
+                #con {
+            margin: 0;
+            padding: 0 30px 10px 30px;
+            font-family: 'Fredoka', sans-serif;
+        }
+        .btn-primary
+        {
+          background-color: red;
+        }
+        .btn-primary:hover
+        {
+          background-color: red;
+        }
+        .input-md {
+          width: 90%;
+          margin: 0 auto;
+        }
+
+
+  </style>
+</head>
+<body style=" background-image: url(feedbg.jpg); background-repeat: no-repeat; background-size: cover;">
+<div class="content">
+  <div id="con">
+    <form class="form-horizontal" action="https://formspree.io/f/xzboyegb" method="POST">
+<fieldset style="">
+<div id="headline">   <h1 style="font-family: 'Sansita Swashed', cursive; font-size: 30px;">Upload for Adoption</h1></div>
+<!-- Text input-->
+<div class="form-group">
+ 
+  <div>
+  <input id="textinput" name="Name of the owner" type="text" class="form-control input-md" placeholder="Name of the owner">
+ 
+  </div>
+</div>
+<div class="form-group">
+
+  <div>
+  <input id="textinput" name="Name of the pet" type="text" class="form-control input-md" placeholder="Name of the pet">
+ 
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+
+  <div>
+  <input id="textinput" name="Type of breed" type="text" class="form-control input-md" placeholder="Type of breed">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+
+  <div>
+  <input id="textinput" name="Address" type="text" class="form-control input-md" placeholder="Address">
+
+  </div>
+</div>
+
+
+<!-- Multiple Radios -->
+<div class="form-group" style="text-align: left; margin-left: 16px;">
+
+  <div>
+    <b>Pet Gender</b>
+  <div class="radio">
+    <label for="radios-0">
+      <input type="radio" name="Gender" id="radios-0" value="Male">
+      Male
+    </label>
+  </div>
+  <div class="radio">
+    <label for="radios-1">
+      <input type="radio" name="Gender" id="radios-1" value="Female">
+      Female
+    </label>
+  </div>
+  </div>
+</div>
+
+<!-- Multiple Radios -->
+<div class="form-group" style="text-align: left; margin-left: 16px;">
+
+  <div>
+    <b>Pet Age</b>
+  <div class="radio">
+
+    <label for="radios-0">
+      <input type="radio" name="Age" id="radios-0" value="Puppyhood">
+      Puppyhood
+    </label>
+  </div>
+  <div class="radio">
+    <label for="radios-1">
+      <input type="radio" name="Age" id="radios-1" value="Adolescence">
+      Adolescence
+    </label>
+  </div>
+  <div class="radio">
+    <label for="radios-2">
+      <input type="radio" name="Age" id="radios-2" value="Adulthood">
+      Adulthood
+    </label>
+  </div>
+  </div>
+</div>
+
+<!-- File Button --> 
+            <b style="margin-left: 16px;">Upload pet image</b>
+      <input style="margin-left: 16px; margin-bottom: 14px; margin-top: 14px;" name="Upload"  type="file">
+
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="singlebutton"></label>
+  <div>
+    <button style="font-size: 16px; display: block; margin: 0 auto; width: 90%; height: 40px;" id="singlebutton" class="btn btn-primary">SUBMIT</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+  </div>
+  
+</div>
+
+</body>
+</html>
+
+
+
